@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Family Album with Names </title>
+    </head>
+    <body>
+        <center>
+        <h1> My Family Album </h1>
+        <img id="Family_image">
+        <h2 id="Family_name"> </h2>
+        <button onclick="Update()"> Update </button>
+        <script>
+
+    var image= [
+        "https://th.bing.com/th/id/OIP.g3b_EciOHJB2pDgcZhEiEQHaE9?w=266&h=180&c=7&o=5&dpr=1.38&pid=1.7", 
+        "Aita.jpeg", 
+        "Bobby Jethai.jpeg",
+         "Putty Jethai.jpeg", 
+         "Deta.jpeg", 
+         "Maa.jpeg", 
+         "Bokuli Mama.jpeg", 
+         "Minati Baa.jpeg", 
+         "Ritu Baa.jpeg", 
+         "Ruhi baa.jpeg", 
+         "Tupu Baa.jpeg", 
+         "Sunu Baa.jpeg", 
+         "Misiki.jpeg",
+          "Bubsi.jpeg"
+          ];
+    var Names= 
+    ["My family",
+     "Ratna Bhattacharjee", 
+     "Gayatri Devi Adhikary",
+      "Rubby Bhattacharjee", 
+      "Pradip Kumar Sarma",
+       "Kanta Bhattacharjee", 
+      "Bakul Koch",
+       "Minati Biswas", 
+      "Deerika Adhikary", 
+      "Rishika Dutta",
+       "Richa Adhikary", 
+      "Evleeka Dutta", 
+      "Akshita Sarma",
+       "Abhishyanta Sarma"
+       ];
+    var i= 0;
+    function Update(){
+    document.getElementById("Family_name").innerHTML = Names[i];
+    document.getElementById("Family_image").src = image[i];
+    i++; 
+    }
+    var length_of_array= 14;
+    if(i > length_of_array) 
+    i= 0;
+
+        </script>
+        </center>
+    </body>
+</html>
